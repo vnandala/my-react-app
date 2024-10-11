@@ -69,25 +69,22 @@ nav a:hover {
 /* Mobile-Specific Styles */
 @media (max-width: 768px) {
   nav ul {
-    display: flex;
-    flex-direction: row; /* Keep items horizontal */
-    justify-content: center; /* Center items */
-    flex-wrap: nowrap; /* Prevent wrapping */
-    width: 100%; /* Ensure full width on mobile */
-  }
-
-  nav ul li {
-    flex: 1; /* Ensure equal space distribution between items */
-    text-align: center; /* Center the text */
-  }
-
-  nav a {
-    font-size: 0.2rem; /* Smaller text for mobile */
-    padding: 5px 8px; /* Smaller padding for mobile */
-    white-space: nowrap; /* Prevent text from wrapping inside links */
-    display: block; /* Ensure each link is treated as a block */
-  }
-}
+    nav ul {
+      flex-direction: row; /* Keep items horizontal on mobile */
+      justify-content: space-around; /* Space items evenly on mobile */
+      width: 100%; /* Full width on mobile */
+    }
+  
+    nav ul li {
+      flex: 1; /* Ensure each link takes equal space */
+      text-align: center; /* Center the text */
+    }
+  
+    nav a {
+      font-size: 1rem; /* Slightly smaller font size */
+      padding: 5px 8px; /* Smaller padding to fit mobile screens */
+    }
+  }}
 
 
 
