@@ -68,18 +68,16 @@ nav a:hover {
 /* Media Query for Mobile */
 @media (max-width: 768px) {
   nav ul {
-    flex-direction: row; /* Keep the items in a horizontal line */
-    justify-content: center; /* Center them horizontally */
-    flex-wrap: nowrap;
-  }
-
-  nav ul li {
-    margin: 0px 0; /* Vertical margin for wrapped items on mobile */
+    display: flex;
+    flex-direction: row; /* Ensure items are horizontal */
+    justify-content: center; /* Center navigation items */
+    flex-wrap: nowrap; /* Prevent wrapping to the next line */
+    gap: 10px; /* Adjust space between items for mobile */
   }
 
   nav a {
-    font-size: 1rem;
-    padding: 2px 5px;
+    font-size: 1rem; /* Reduce font size on mobile */
+    padding: 8px 10px; /* Reduce padding to fit mobile screen */
   }
 }
 
