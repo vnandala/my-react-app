@@ -82,7 +82,7 @@ nav a:hover {
   }
 
   nav a {
-    font-size: 0.9rem; /* Smaller text for mobile */
+    font-size: 0.2rem; /* Smaller text for mobile */
     padding: 5px 8px; /* Smaller padding for mobile */
     white-space: nowrap; /* Prevent text from wrapping inside links */
     display: block; /* Ensure each link is treated as a block */
