@@ -70,6 +70,8 @@ nav a:hover {
 @media (max-width: 768px) {
   nav ul {
     nav ul {
+      display: flex; /* Flexbox for horizontal alignment */
+      justify-content: center; /* Center navigation items */
       flex-direction: row; /* Keep items horizontal on mobile */
       justify-content: space-around; /* Space items evenly on mobile */
 
