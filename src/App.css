@@ -69,7 +69,6 @@ nav a:hover {
 /* Mobile-Specific Styles */
 @media (max-width: 768px) {
   nav ul {
-    nav ul {
       display: flex; /* Flexbox for horizontal alignment */
       justify-content: center; /* Center navigation items */
       flex-direction: row; /* Keep items horizontal on mobile */
@@ -85,7 +84,7 @@ nav a:hover {
     nav a {
       font-size: 1rem; /* Slightly smaller font size */ /* Smaller padding to fit mobile screens */
     }
-  }}
+  }
 
 
 
