@@ -8,23 +8,21 @@ body {
                     linear-gradient(225deg, rgba(138, 199, 110, 0.2) 0%, transparent 15%), 
                     linear-gradient(45deg, rgba(85, 79, 178, 0.2) 0%, transparent 15%), 
                     linear-gradient(315deg, rgba(213, 227, 121, 0.2) 0%, transparent 15%);
-  background-size: 40px 40px; /* Adjust size for texture density */
-  background-color: #f0f8ff;
+  background-size: 40px 40px;
 }
 
 /* App Header with Gradient Background and Shadow */
 .app-header {
-  background: linear-gradient(90deg, #1e90ff, #00bfff); /* Gradient from blue to sky blue */
+  background: linear-gradient(90deg, #1e90ff, #00bfff);
   color: white;
   text-align: center;
-  padding: 25px 0;
+  padding: 10px 0;
   position: sticky;
   top: 0;
   z-index: 1000;
-  height: 120px; /* Fixed height */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
-  border-bottom: 3px solid #ffdd57; /* Add a bottom border with a bright accent */
-  animation: slide-in 1s ease-in-out; /* Slide-in animation */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-bottom: 3px solid #ffdd57;
+  animation: slide-in 1s ease-in-out;
 }
 
 /* Header Title (Slight Glow Effect) */
@@ -33,7 +31,7 @@ body {
   font-size: 2.5rem;
   letter-spacing: 1px;
   animation: slide-in 1s ease-in-out;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Text shadow for a glowing effect */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 /* Navigation Bar */
@@ -43,6 +41,7 @@ nav ul {
   justify-content: center;
   padding: 0;
   margin: 20px 0;
+  flex-wrap: wrap;
 }
 
 nav ul li {
@@ -54,15 +53,15 @@ nav a {
   text-decoration: none;
   font-size: 1.2rem;
   transition: color 0.3s ease, background-color 0.3s ease;
-  padding: 10px 15px; /* Added padding for better spacing */
-  border-radius: 20px; /* Soft rounded corners */
+  padding: 10px 15px;
+  border-radius: 20px;
 }
 
 nav a:hover {
-  background-color: #ffdd57; /* Yellow hover background */
-  color: #1e90ff; /* Blue text on hover */
+  background-color: #ffdd57;
+  color: #1e90ff;
   text-decoration: none;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow on hover for depth */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Slide-in Animation */
@@ -76,7 +75,6 @@ nav a:hover {
     transform: translateY(0);
   }
 }
-
 
 /* Floating Section Styles */
 .sections {
@@ -92,7 +90,7 @@ section {
   padding: 60px;
   max-width: 1100px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  scroll-margin-top: 200px; /* Offset for the sticky header */
+  scroll-margin-top: 150px;
 }
 
 section:hover {
@@ -119,18 +117,6 @@ section:hover {
   background-color: #ffdd57;
 }
 
-/* Animations */
-@keyframes slide-in {
-  0% {
-    opacity: 0;
-    transform: translateY(-50px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 /* Footer */
 footer {
   text-align: center;
@@ -154,7 +140,6 @@ footer p {
   margin-top: 0px;
 }
 
-/* Team Section Heading */
 .team-heading {
   font-size: 1.6rem;
   color: #333;
@@ -162,7 +147,7 @@ footer p {
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 2px;
-  width: 100%; /* Ensure heading spans the full width */
+  width: 100%;
 }
 
 /* Team Member Box */
@@ -188,7 +173,7 @@ footer p {
   height: 120px;
   border-radius: 50%;
   margin-bottom: 15px;
-  border: 3px solid #1e90ff; /* Add border for visual interest */
+  border: 3px solid #1e90ff;
   object-fit: cover;
 }
 
@@ -203,4 +188,53 @@ footer p {
 .team-member p {
   font-size: 1rem;
   color: #666;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For mobile devices */
+@media (max-width: 768px) {
+  .app-header {
+    padding: 10px 0;
+  }
+
+  .app-header h1 {
+    font-size: 1.8rem; /* Smaller title font for mobile */
+  }
+
+  nav ul {
+    flex-direction: column; /* Stack links vertically */
+    padding: 10px 0;
+  }
+
+  nav ul li {
+    margin: 10px 0; /* Add space between vertically stacked links */
+  }
+
+  nav a {
+    font-size: 1rem; /* Reduce font size for links */
+    padding: 8px 10px;
+  }
+
+  section {
+    padding: 40px 20px; /* Reduce padding in sections for mobile */
+    scroll-margin-top: 120px; /* Adjust scroll margin for mobile */
+  }
+
+  .team-member {
+    width: 180px; /* Smaller team member boxes */
+  }
+
+  .team-icon {
+    width: 100px;
+    height: 100px;
+  }
+
+  .team-member h3 {
+    font-size: 1.3rem; /* Smaller text for mobile */
+  }
+
+  .team-member p {
+    font-size: 0.9rem;
+  }
 }
