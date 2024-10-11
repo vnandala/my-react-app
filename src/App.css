@@ -69,16 +69,16 @@ nav a:hover {
 @media (max-width: 768px) {
   nav ul {
     flex-wrap: wrap; /* Allow wrapping for smaller screens */
-    margin-top: 10px;
+    margin-top: 0px;
   }
 
   nav ul li {
-    margin: 10px 0; /* Vertical margin for wrapped items on mobile */
+    margin: 0px 0; /* Vertical margin for wrapped items on mobile */
   }
 
   nav a {
     font-size: 1rem;
-    padding: 8px 10px;
+    padding: 2px 5px;
   }
 }
 
