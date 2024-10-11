@@ -13,7 +13,7 @@ body {
 
 /* App Header with Gradient Background and Shadow */
 .app-header {
-  background: linear-gradient(90deg, #1e90ff, #00bfff);
+  background: linear-gradient(90deg, #dc6820, #00bfff);
   color: white;
   text-align: center;
   padding: 10px 0;
