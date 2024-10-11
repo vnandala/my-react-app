@@ -37,15 +37,16 @@ body {
 /* Navigation Bar */
 nav ul {
   list-style: none;
-  display: flex;
-  justify-content: center;
+  display: flex; /* Flexbox for horizontal alignment */
+  justify-content: center; /* Center the items */
+  align-items: center; /* Align items vertically in the center */
   padding: 0;
   margin: 20px 0;
-  flex-wrap: wrap;
+  flex-wrap: nowrap; /* Prevent wrapping */
 }
 
 nav ul li {
-  margin: 0 15px;
+  margin: 0 15px; /* Space between links */
 }
 
 nav a {
@@ -63,6 +64,24 @@ nav a:hover {
   text-decoration: none;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+/* Media Query for Mobile */
+@media (max-width: 768px) {
+  nav ul {
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    margin-top: 10px;
+  }
+
+  nav ul li {
+    margin: 10px 0; /* Vertical margin for wrapped items on mobile */
+  }
+
+  nav a {
+    font-size: 1rem;
+    padding: 8px 10px;
+  }
+}
+
 
 /* Slide-in Animation */
 @keyframes slide-in {
