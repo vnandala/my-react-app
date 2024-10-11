@@ -72,7 +72,7 @@ nav a:hover {
     nav ul {
       flex-direction: row; /* Keep items horizontal on mobile */
       justify-content: space-around; /* Space items evenly on mobile */
-      width: 100%; /* Full width on mobile */
+
     }
   
     nav ul li {
@@ -81,8 +81,7 @@ nav a:hover {
     }
   
     nav a {
-      font-size: 1rem; /* Slightly smaller font size */
-      padding: 5px 8px; /* Smaller padding to fit mobile screens */
+      font-size: 1rem; /* Slightly smaller font size */ /* Smaller padding to fit mobile screens */
     }
   }}
 
