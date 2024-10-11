@@ -3,11 +3,11 @@ import React from 'react';
 
 
 const teamMembers = [
-  { name: 'Vamshi', bio: 'Edge Computing Specialist.', imgSrc: '/vamshi.jpg' },
-  { name: 'Divya', bio: 'Latency Reduction Expert.', imgSrc: 'path_to_divya_photo' },
-  { name: 'Bushra', bio: 'Real-Time Data Engineer.', imgSrc: 'path_to_bushra_photo' },
-  { name: 'Jeevan', bio: 'Edge Network Architect.', imgSrc: 'path_to_jeevan_photo' },
-  { name: 'Sudeepa', bio: 'Edge Security Analyst.', imgSrc: 'path_to_sudeepa_photo' },
+  { name: 'Vamshi', bio: 'Team Member-5.', imgSrc: '/vamshi.jpg' },
+  { name: 'Divya', bio: 'Team Member-5.', imgSrc: 'path_to_divya_photo' },
+  { name: 'Syeda Bushra Fatima', bio: 'Team Member-5.', imgSrc: 'path_to_bushra_photo' },
+  { name: 'Jeevan', bio: 'Team Member-5.', imgSrc: 'path_to_jeevan_photo' },
+  { name: 'Sudeepa', bio: 'Team Member-5.', imgSrc: 'path_to_sudeepa_photo' },
 ];
 
 const Team = () => {
