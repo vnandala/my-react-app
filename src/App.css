@@ -37,49 +37,58 @@ body {
 /* Navigation Bar */
 nav ul {
   list-style: none;
-  display: flex; /* Flexbox for horizontal alignment */
-  justify-content: center; /* Center the items */
-  align-items: center; /* Align items vertically in the center */
   padding: 0;
-  margin: 20px 0;
+  margin: 30px;
+  display: flex; /* Flexbox for horizontal alignment */
+  justify-content: center; /* Center navigation items */
+  align-items: center; /* Align items vertically */
+  flex-direction: row; /* Force horizontal alignment */
   flex-wrap: nowrap; /* Prevent wrapping */
+  gap: 10px; /* Space between items */
 }
 
 nav ul li {
-  margin: 0 15px; /* Space between links */
+  margin: 0;
 }
 
 nav a {
   color: white;
   text-decoration: none;
   font-size: 1.2rem;
-  transition: color 0.3s ease, background-color 0.3s ease;
   padding: 10px 15px;
   border-radius: 20px;
+  transition: color 0.3s ease, background-color 0.3s ease;
 }
 
 nav a:hover {
   background-color: #ffdd57;
   color: #1e90ff;
   text-decoration: none;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Media Query for Mobile */
+/* Mobile-Specific Styles */
 @media (max-width: 768px) {
   nav ul {
     display: flex;
-    flex-direction: row; /* Ensure items are horizontal */
-    justify-content: center; /* Center navigation items */
-    flex-wrap: nowrap; /* Prevent wrapping to the next line */
-    gap: 10px; /* Adjust space between items for mobile */
+    flex-direction: row; /* Keep items horizontal */
+    justify-content: center; /* Center items */
+    flex-wrap: nowrap; /* Prevent wrapping */
+    width: 100%; /* Ensure full width on mobile */
+  }
+
+  nav ul li {
+    flex: 1; /* Ensure equal space distribution between items */
+    text-align: center; /* Center the text */
   }
 
   nav a {
-    font-size: 1rem; /* Reduce font size on mobile */
-    padding: 8px 10px; /* Reduce padding to fit mobile screen */
+    font-size: 0.9rem; /* Smaller text for mobile */
+    padding: 5px 8px; /* Smaller padding for mobile */
+    white-space: nowrap; /* Prevent text from wrapping inside links */
+    display: block; /* Ensure each link is treated as a block */
   }
 }
+
 
 
 /* Slide-in Animation */
