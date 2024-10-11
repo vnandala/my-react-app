@@ -69,7 +69,7 @@ nav a:hover {
 @media (max-width: 768px) {
   nav ul {
     flex-wrap: wrap; /* Allow wrapping for smaller screens */
-    margin-top: 0px;
+    justify-content: center;
   }
 
   nav ul li {
