@@ -68,23 +68,25 @@ nav a:hover {
 
 /* Mobile-Specific Styles */
 @media (max-width: 768px) {
-  nav ul {
-      display: flex; /* Flexbox for horizontal alignment */
-      justify-content: center; /* Center navigation items */
-      flex-direction: row; /* Keep items horizontal on mobile */
-      justify-content: space-around; /* Space items evenly on mobile */
-
-    }
-  
-    nav ul li {
-      flex: 1; /* Ensure each link takes equal space */
-      text-align: center; /* Center the text */
-    }
-  
-    nav a {
-      font-size: 1rem; /* Slightly smaller font size */ /* Smaller padding to fit mobile screens */
-    }
+  .app-header h1 {
+    font-size: 1.5rem; /* Smaller title font for mobile */
   }
+  nav ul {
+    flex-direction: row; /* Ensure horizontal alignment */
+    justify-content: space-around; /* Distribute items evenly */
+    gap: 5px; /* Add a bit of space between the items */
+  }
+  
+  nav ul li {
+    flex: none; /* Ensure items take up the necessary space only */
+    text-align: center; /* Center the text */
+  }
+  
+  nav a {
+    font-size: 0.9rem; /* Slightly smaller font for links on mobile */
+    padding: 5px 8px; /* Smaller padding to fit horizontally */
+  }
+}
 
 
 
