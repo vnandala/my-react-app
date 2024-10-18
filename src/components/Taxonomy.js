@@ -1,33 +1,27 @@
 // Taxonomy.js
 import React from 'react';
+import './Taxonomy.css'; // Import a separate CSS file for styling
 
 const Taxonomy = () => {
   return (
-    <div>
+    <div className="taxonomy-container">
       <h2>Taxonomy of Surveyed Papers</h2>
       <p>Here we classify the papers reviewed in the context of edge computing in web technologies based on key metrics like latency reduction, real-time data handling, and bandwidth optimization.</p>
-      <table>
+      
+      <table className="styled-table">
         <thead>
           <tr>
-            <th>Domain</th>
-            <th>Solution</th>
-            <th>Methodology</th>
-            <th>Findings</th>
+            <th>Paper Citation</th>
+            <th>Problem Domain</th>
+            <th>Solution Approach</th>
+            <th>Web Arch. Type</th>
+            <th>Evaluation Methodology</th>
+            <th>App. Domain</th>
+            <th>Security Mechanism</th>
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>Latency Reduction</td>
-            <td>Edge Nodes</td>
-            <td>Deployment near users</td>
-            <td>Improved response time</td>
-          </tr>
-          <tr>
-            <td>Real-Time Processing</td>
-            <td>AI at the Edge</td>
-            <td>Real-time decisions</td>
-            <td>Enhanced real-time capabilities</td>
-          </tr>
+          {/* You can add rows with content later */}
         </tbody>
       </table>
     </div>
