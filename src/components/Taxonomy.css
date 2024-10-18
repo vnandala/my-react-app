@@ -1,50 +1,68 @@
 /* General styling for the taxonomy container */
 .taxonomy-container {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Container to make the table horizontally scrollable */
+.table-container {
+  overflow-x: auto;
+}
+
+/* Styling for the Table */
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9rem;
+  font-family: 'Arial', sans-serif;
+  text-align: left;
+  white-space: nowrap; /* Prevent wrapping of table text */
+}
+
+.styled-table thead tr {
+  background-color: #00bfff;
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+}
+
+.styled-table th,
+.styled-table td {
+  padding: 12px 15px;
+  border: 1px solid #dddddd;
+}
+
+.styled-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+  border-bottom: 2px solid #00bfff;
+}
+
+.styled-table tbody tr:hover {
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+/* Media queries for better responsiveness */
+@media (max-width: 768px) {
+  .taxonomy-container {
+    padding: 10px;
   }
-  
-  /* Styling for the Table */
-  .styled-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 25px 0;
-    font-size: 0.9rem;
-    font-family: 'Arial', sans-serif;
-    text-align: left;
-  }
-  
-  .styled-table thead tr {
-    background-color: #00bfff;
-    color: #ffffff;
-    text-align: left;
-    font-weight: bold;
-  }
-  
+
   .styled-table th,
   .styled-table td {
-    padding: 12px 15px;
-    border: 1px solid #dddddd;
+    font-size: 0.8rem;
+    padding: 8px 10px;
   }
-  
-  .styled-table tbody tr {
-    border-bottom: 1px solid #dddddd;
-  }
-  
-  .styled-table tbody tr:nth-of-type(even) {
-    background-color: #f3f3f3;
-  }
-  
-  .styled-table tbody tr:last-of-type {
-    border-bottom: 2px solid #00bfff;
-  }
-  
-  .styled-table tbody tr:hover {
-    background-color: #f1f1f1;
-    cursor: pointer;
-  }
-  
+}
