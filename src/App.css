@@ -66,27 +66,86 @@ nav a:hover {
   text-decoration: none;
 }
 
-/* Mobile-Specific Styles */
+/* For Mobile (Max-width 768px) */
 @media (max-width: 768px) {
+  /* Adjust Heading Size */
   .app-header h1 {
-    font-size: 1.5rem; /* Smaller title font for mobile */
+    font-size: 1.5rem !important; /* Smaller font size for mobile */
   }
+
+  /* Align Nav Items Horizontally */
   nav ul {
-    flex-direction: row; /* Ensure horizontal alignment */
-    justify-content: space-around; /* Distribute items evenly */
-    gap: 5px; /* Add a bit of space between the items */
+    display: flex !important; /* Ensure horizontal alignment */
+    justify-content: space-around !important; /* Spread items evenly */
+    gap: 5px;
+    padding: 0;
+    margin: 0;
   }
-  
+
   nav ul li {
-    flex: none; /* Ensure items take up the necessary space only */
-    text-align: center; /* Center the text */
+    flex: none !important; /* Prevent items from taking too much space */
+    text-align: center;
   }
-  
+
   nav a {
-    font-size: 0.9rem; /* Slightly smaller font for links on mobile */
-    padding: 5px 8px; /* Smaller padding to fit horizontally */
+    font-size: 0.9rem !important; /* Smaller link font size */
+    padding: 5px 8px !important; /* Smaller padding for better fit */
+  }
+
+  /* Adjust Section Padding */
+  section {
+    padding: 40px 20px !important;
+    scroll-margin-top: 120px;
   }
 }
+
+/* For Tablets (iPad/medium-sized screens between 768px and 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .app-header h1 {
+    font-size: 2rem !important; /* Slightly larger for tablets */
+  }
+
+  /* Ensure Navigation is still horizontal */
+  nav ul {
+    display: flex !important;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  nav ul li {
+    flex: none;
+    text-align: center;
+  }
+
+  nav a {
+    font-size: 1rem !important; /* Adjusted font size for tablets */
+    padding: 8px 12px !important; /* Better padding for tablet view */
+  }
+
+  section {
+    padding: 50px 30px !important; /* Adjusted padding for tablets */
+    scroll-margin-top: 100px;
+  }
+
+  /* Adjust Team Member Box */
+  .team-member {
+    width: 200px; /* Slightly larger for tablet screens */
+  }
+
+  .team-icon {
+    width: 110px;
+    height: 110px;
+  }
+
+  .team-member h3 {
+    font-size: 1.4rem;
+  }
+
+  .team-member p {
+    font-size: 0.95rem;
+  }
+}
+
 
 
 
