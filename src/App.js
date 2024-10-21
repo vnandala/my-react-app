@@ -30,7 +30,7 @@ function App() {
     <div className="App">
       {/* Navigation Bar */}
       <header className="app-header">
-        <h1>A Survey on Edge Computing Aspects of Web Technologies</h1>
+        <h1>Edge Computing Aspects of Web Technologies</h1>
         <nav>
           <ul>
             <li><a href="#home">Home</a></li>

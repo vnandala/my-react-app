@@ -1,6 +1,6 @@
 /* General styling for the taxonomy container */
 .taxonomy-container {
-  max-width: 1000px;
+  max-width: 1400px; /* Increase max width of the container */
   margin: 0 auto;
   padding: 20px;
   background-color: #fff;
@@ -11,6 +11,7 @@
 /* Container to make the table horizontally scrollable */
 .table-container {
   overflow-x: auto;
+  padding: 10px 0;
 }
 
 /* Styling for the Table */
@@ -21,7 +22,28 @@
   font-size: 0.9rem;
   font-family: 'Arial', sans-serif;
   text-align: left;
-  white-space: nowrap; /* Prevent wrapping of table text */
+  table-layout: auto; /* Flexible column sizes */
+  word-wrap: break-word; /* Ensures text wrapping */
+  white-space: normal; /* Allow text to wrap inside cells */
+}
+
+/* Styling for Citation column */
+.styled-table td:first-child,
+.styled-table th:first-child {
+  min-width: 350px; /* Increased width for the citation column */
+  max-width: 400px; /* Max width to ensure balance */
+}
+
+/* Increase width for all other cells */
+.styled-table th,
+.styled-table td {
+  padding: 12px 18px; /* Increased padding for breathing space */
+  border: 1px solid #dddddd;
+  word-wrap: break-word; /* Ensure text wraps within the cells */
+  white-space: normal; /* Prevents long text from staying in one line */
+  vertical-align: top; /* Ensures text starts from the top of the cell */
+  min-width: 180px; /* Increase width of other cells */
+  max-width: 250px; /* Ensure cells are still constrained within a max width */
 }
 
 .styled-table thead tr {
@@ -29,12 +51,6 @@
   color: #ffffff;
   text-align: left;
   font-weight: bold;
-}
-
-.styled-table th,
-.styled-table td {
-  padding: 12px 15px;
-  border: 1px solid #dddddd;
 }
 
 .styled-table tbody tr {
@@ -54,7 +70,7 @@
   cursor: pointer;
 }
 
-/* Media queries for better responsiveness */
+/* Responsive design */
 @media (max-width: 768px) {
   .taxonomy-container {
     padding: 10px;
@@ -62,7 +78,13 @@
 
   .styled-table th,
   .styled-table td {
-    font-size: 0.8rem;
-    padding: 8px 10px;
+    font-size: 0.85rem;
+    padding: 8px 12px;
+    min-width: 150px;
+  }
+
+  .styled-table td:first-child,
+  .styled-table th:first-child {
+    min-width: 220px; /* Slightly reduce citation width on smaller screens */
   }
 }
