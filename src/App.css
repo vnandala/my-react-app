@@ -16,7 +16,7 @@ body {
   background: linear-gradient(90deg, #f0ac36, #00bfff);
   color: white;
   text-align: center;
-  padding: 10px 0;
+  padding: 25px 0;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -39,12 +39,12 @@ nav ul {
   list-style: none;
   padding: 0;
   margin: 25px;
-  display: flex; /* Flexbox for horizontal alignment */
-  justify-content: center; /* Center navigation items */
-  align-items: center; /* Align items vertically */
-  flex-direction: row; /* Force horizontal alignment */
-  flex-wrap: nowrap; /* Prevent wrapping */
-  gap: 10px; /* Space between items */
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  flex-direction: row; 
+  flex-wrap: nowrap; 
+  gap: 10px; 
 }
 
 nav ul li {
@@ -63,59 +63,50 @@ nav a {
 nav a:hover {
   background-color: #ffdd57;
   color: #1e90ff;
-  text-decoration: none;
 }
 
 /* For Mobile (Max-width 768px) */
 @media (max-width: 768px) {
-  /* Adjust Heading Size */
   .app-header h1 {
-    font-size: 1.4rem !important; /* Smaller font size for mobile */
+    font-size: 1.4rem !important;
   }
 
-  /* Align Nav Items Horizontally */
   nav ul {
-    display: flex !important; /* Ensure horizontal alignment */
-    justify-content: space-around !important; /* Spread items evenly */
-    gap: 5px;
+    display: flex !important;
+    justify-content: space-around !important;
+    gap: 10px;
     padding: 0;
     margin: 0;
-    list-style: none; /* Remove list bullet points */
+    list-style: none;
   }
 
   nav ul li {
-    flex: none !important; /* Prevent items from taking too much space */
+    flex: none !important;
     text-align: center;
   }
 
   nav a {
-    font-size: 1rem !important; /* Adjust link font size for better readability */
-    padding: 5px 10px !important; /* Adjust padding */
-    text-decoration: none; /* Remove underline */
-    color: white; /* Ensure text color is visible */
+    font-size: 1rem !important;
+    padding: 10px 15px !important;
   }
 
-  /* Adjust Section Padding */
   section {
     padding: 40px 20px !important;
     scroll-margin-top: 120px;
   }
 
-  /* Adjust Navbar Padding and Margin */
   .app-header nav {
-    padding: 10px 0; /* Adjust padding to fit better on mobile */
+    padding: 15px 0;
     margin: 0;
   }
 }
 
-
 /* For Tablets (iPad/medium-sized screens between 768px and 1024px) */
 @media (min-width: 768px) and (max-width: 1024px) {
   .app-header h1 {
-    font-size: 2rem !important; /* Slightly larger for tablets */
+    font-size: 2rem !important;
   }
 
-  /* Ensure Navigation is still horizontal */
   nav ul {
     display: flex !important;
     justify-content: center;
@@ -128,18 +119,17 @@ nav a:hover {
   }
 
   nav a {
-    font-size: 1rem !important; /* Adjusted font size for tablets */
-    padding: 8px 12px !important; /* Better padding for tablet view */
+    font-size: 1rem !important;
+    padding: 8px 12px !important;
   }
 
   section {
-    padding: 50px 30px !important; /* Adjusted padding for tablets */
+    padding: 50px 30px !important;
     scroll-margin-top: 100px;
   }
 
-  /* Adjust Team Member Box */
   .team-member {
-    width: 200px; /* Slightly larger for tablet screens */
+    width: 200px;
   }
 
   .team-icon {
@@ -155,9 +145,6 @@ nav a:hover {
     font-size: 0.95rem;
   }
 }
-
-
-
 
 /* Slide-in Animation */
 @keyframes slide-in {
@@ -185,7 +172,7 @@ section {
   padding: 60px;
   max-width: 1100px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  scroll-margin-top: 150px;
+  scroll-margin-top: 200px;
 }
 
 section:hover {
@@ -224,4 +211,3 @@ footer p {
   margin: 0;
   font-size: 1rem;
 }
-
