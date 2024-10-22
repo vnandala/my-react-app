@@ -1,4 +1,3 @@
-// App.js
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import Home from './components/Home';
@@ -7,6 +6,7 @@ import Taxonomy from './components/Taxonomy';
 import Team from './components/Team';
 
 function App() {
+  const [currentSection, setCurrentSection] = useState('home'); // State to keep track of which section to display
   const [showScroll, setShowScroll] = useState(false);
 
   const checkScrollTop = () => {
@@ -26,6 +26,11 @@ function App() {
     return () => window.removeEventListener('scroll', checkScrollTop);
   }, [showScroll]);
 
+  // Function to change the current section
+  const handleNavigation = (section) => {
+    setCurrentSection(section);
+  };
+
   return (
     <div className="App">
       {/* Navigation Bar */}
@@ -33,28 +38,36 @@ function App() {
         <h1>Edge Computing Aspects of Web Technologies</h1>
         <nav>
           <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#content">Content</a></li>
-            <li><a href="#taxonomy">Taxonomy</a></li>
-            <li><a href="#team">Team</a></li>
+            <li><button onClick={() => handleNavigation('home')}>Home</button></li>
+            <li><button onClick={() => handleNavigation('content')}>Content</button></li>
+            <li><button onClick={() => handleNavigation('taxonomy')}>Taxonomy</button></li>
+            <li><button onClick={() => handleNavigation('team')}>Team</button></li>
           </ul>
         </nav>
       </header>
 
-      {/* Sections */}
+      {/* Conditionally Render Sections */}
       <div className="sections">
-        <section id="home">
-          <Home />
-        </section>
-        <section id="content">
-          <Content />
-        </section>
-        <section id="taxonomy">
-          <Taxonomy />
-        </section>
-        <section id="team">
-          <Team />
-        </section>
+        {currentSection === 'home' && (
+          <section id="home">
+            <Home />
+          </section>
+        )}
+        {currentSection === 'content' && (
+          <section id="content">
+            <Content />
+          </section>
+        )}
+        {currentSection === 'taxonomy' && (
+          <section id="taxonomy">
+            <Taxonomy />
+          </section>
+        )}
+        {currentSection === 'team' && (
+          <section id="team">
+            <Team />
+          </section>
+        )}
       </div>
 
       {/* Scroll-to-Top Button */}

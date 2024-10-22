@@ -6,9 +6,9 @@
     flex-wrap: wrap;
     gap: 60px;
     margin-top: 0px;
-  }
-  
-  .team-heading {
+}
+
+.team-heading {
     font-size: 1.6rem;
     color: #333;
     margin-bottom: 30px;
@@ -16,10 +16,10 @@
     text-transform: uppercase;
     letter-spacing: 2px;
     width: 100%;
-  }
-  
-  /* Team Member Box */
-  .team-member {
+}
+
+/* Team Member Box */
+.team-member {
     background-color: #f9f9f9;
     padding: 20px;
     border-radius: 15px;
@@ -27,44 +27,50 @@
     width: 230px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  /* Team Member Hover Effect */
-  .team-member:hover {
+}
+
+/* Team Member Hover Effect */
+.team-member:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  }
-  
-  /* Team Member Icon (Circular Image) */
-  .team-icon {
+}
+
+/* Team Member Icon (Circular Image) */
+.team-icon {
     width: 120px;
     height: 120px;
     border-radius: 50%;
     margin-bottom: 15px;
     border: 3px solid #1e90ff;
     object-fit: cover;
-  }
-  
-  /* Team Member Name */
-  .team-member h3 {
+}
+
+/* Team Member Name */
+.team-member h3 {
     font-size: 1.5rem;
     margin: 10px 0 5px;
     color: #333;
-  }
-  
-  /* Team Member Bio */
-  .team-member p {
+}
+
+/* Team Member Role (Added Role Styling) */
+.team-member h4 {
+    font-size: 1.1rem; /* Slightly smaller than the name */
+    font-weight: bold;
+    color: #555; /* Slightly lighter color than the name */
+    margin-bottom: 10px; /* Space between role and bio */
+}
+
+/* Team Member Bio */
+.team-member p {
     font-size: 1rem;
     color: #666;
-  }
+}
 
+/* Media Queries for Responsiveness */
 
+/* For mobile devices */
+@media (max-width: 768px) {
   
-  /* Media Queries for Responsiveness */
-  
-  /* For mobile devices */
-  @media (max-width: 768px) {
-    
     .team-member {
       width: 180px; /* Smaller team member boxes */
     }
@@ -78,8 +84,11 @@
       font-size: 1.3rem; /* Smaller text for mobile */
     }
   
+    .team-member h4 {
+      font-size: 1rem; /* Smaller role text for mobile */
+    }
+  
     .team-member p {
       font-size: 0.9rem;
     }
-  }
-  
+}

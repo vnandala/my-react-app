@@ -17,7 +17,7 @@ body {
   color: white;
   text-align: center;
   padding: 25px 0;
-  position: sticky;
+  /*position: sticky;*/
   top: 0;
   z-index: 1000;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -51,19 +51,23 @@ nav ul li {
   margin: 0;
 }
 
-nav a {
+nav ul li button {
+  background: none;
+  border: none;
   color: white;
-  text-decoration: none;
   font-size: 1.2rem;
+  cursor: pointer;
   padding: 10px 15px;
   border-radius: 20px;
   transition: color 0.3s ease, background-color 0.3s ease;
 }
 
-nav a:hover {
+nav ul li button:hover {
   background-color: #ffdd57;
   color: #1e90ff;
 }
+
+
 
 /* For Mobile (Max-width 768px) */
 @media (max-width: 768px) {
@@ -78,6 +82,11 @@ nav a:hover {
     padding: 0;
     margin: 0;
     list-style: none;
+  }
+
+  nav ul li button {
+    font-size: 1rem !important;
+    padding: 10px 15px !important;
   }
 
   nav ul li {
