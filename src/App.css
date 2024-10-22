@@ -70,7 +70,7 @@ nav a:hover {
 @media (max-width: 768px) {
   /* Adjust Heading Size */
   .app-header h1 {
-    font-size: 1.5rem !important; /* Smaller font size for mobile */
+    font-size: 1.4rem !important; /* Smaller font size for mobile */
   }
 
   /* Align Nav Items Horizontally */
@@ -80,6 +80,7 @@ nav a:hover {
     gap: 5px;
     padding: 0;
     margin: 0;
+    list-style: none; /* Remove list bullet points */
   }
 
   nav ul li {
@@ -88,8 +89,10 @@ nav a:hover {
   }
 
   nav a {
-    font-size: 0.9rem !important; /* Smaller link font size */
-    padding: 5px 8px !important; /* Smaller padding for better fit */
+    font-size: 1rem !important; /* Adjust link font size for better readability */
+    padding: 5px 10px !important; /* Adjust padding */
+    text-decoration: none; /* Remove underline */
+    color: white; /* Ensure text color is visible */
   }
 
   /* Adjust Section Padding */
@@ -97,7 +100,14 @@ nav a:hover {
     padding: 40px 20px !important;
     scroll-margin-top: 120px;
   }
+
+  /* Adjust Navbar Padding and Margin */
+  .app-header nav {
+    padding: 10px 0; /* Adjust padding to fit better on mobile */
+    margin: 0;
+  }
 }
+
 
 /* For Tablets (iPad/medium-sized screens between 768px and 1024px) */
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -215,111 +225,3 @@ footer p {
   font-size: 1rem;
 }
 
-/* Team Section */
-.team-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 60px;
-  margin-top: 0px;
-}
-
-.team-heading {
-  font-size: 1.6rem;
-  color: #333;
-  margin-bottom: 30px;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  width: 100%;
-}
-
-/* Team Member Box */
-.team-member {
-  background-color: #f9f9f9;
-  padding: 20px;
-  border-radius: 15px;
-  text-align: center;
-  width: 230px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-/* Team Member Hover Effect */
-.team-member:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-/* Team Member Icon (Circular Image) */
-.team-icon {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  margin-bottom: 15px;
-  border: 3px solid #1e90ff;
-  object-fit: cover;
-}
-
-/* Team Member Name */
-.team-member h3 {
-  font-size: 1.5rem;
-  margin: 10px 0 5px;
-  color: #333;
-}
-
-/* Team Member Bio */
-.team-member p {
-  font-size: 1rem;
-  color: #666;
-}
-
-/* Media Queries for Responsiveness */
-
-/* For mobile devices */
-@media (max-width: 768px) {
-  .app-header {
-    padding: 10px 0;
-  }
-
-  .app-header h1 {
-    font-size: 1.8rem; /* Smaller title font for mobile */
-  }
-
-  nav ul {
-    flex-direction: column; /* Stack links vertically */
-    padding: 10px 0;
-  }
-
-  nav ul li {
-    margin: 10px 0; /* Add space between vertically stacked links */
-  }
-
-  nav a {
-    font-size: 1rem; /* Reduce font size for links */
-    padding: 8px 10px;
-  }
-
-  section {
-    padding: 40px 20px; /* Reduce padding in sections for mobile */
-    scroll-margin-top: 120px; /* Adjust scroll margin for mobile */
-  }
-
-  .team-member {
-    width: 180px; /* Smaller team member boxes */
-  }
-
-  .team-icon {
-    width: 100px;
-    height: 100px;
-  }
-
-  .team-member h3 {
-    font-size: 1.3rem; /* Smaller text for mobile */
-  }
-
-  .team-member p {
-    font-size: 0.9rem;
-  }
-}

@@ -1,0 +1,43 @@
+/* Container styling */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    line-height: 1.6;
+    background-color: #fff; /* Optional background to make it stand out */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Heading styles */
+  .heading {
+    margin-top: 150px;
+    margin-bottom: 50px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .headingtop {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  /* Subheading styles */
+  .subheading {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  /* Paragraph styles */
+  .paragraph {
+    margin-bottom: 20px;
+    font-size: 16px;
+    text-align: justify;
+  }
+  

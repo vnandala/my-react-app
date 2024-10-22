@@ -1,0 +1,85 @@
+/* Team Section */
+.team-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 60px;
+    margin-top: 0px;
+  }
+  
+  .team-heading {
+    font-size: 1.6rem;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    width: 100%;
+  }
+  
+  /* Team Member Box */
+  .team-member {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    width: 230px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Team Member Hover Effect */
+  .team-member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Team Member Icon (Circular Image) */
+  .team-icon {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 3px solid #1e90ff;
+    object-fit: cover;
+  }
+  
+  /* Team Member Name */
+  .team-member h3 {
+    font-size: 1.5rem;
+    margin: 10px 0 5px;
+    color: #333;
+  }
+  
+  /* Team Member Bio */
+  .team-member p {
+    font-size: 1rem;
+    color: #666;
+  }
+
+
+  
+  /* Media Queries for Responsiveness */
+  
+  /* For mobile devices */
+  @media (max-width: 768px) {
+    
+    .team-member {
+      width: 180px; /* Smaller team member boxes */
+    }
+  
+    .team-icon {
+      width: 100px;
+      height: 100px;
+    }
+  
+    .team-member h3 {
+      font-size: 1.3rem; /* Smaller text for mobile */
+    }
+  
+    .team-member p {
+      font-size: 0.9rem;
+    }
+  }
+  

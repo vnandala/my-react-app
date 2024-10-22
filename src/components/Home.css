@@ -1,0 +1,51 @@
+/* Home.css */
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    line-height: 1.6;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .heading {
+    margin-top: 150px; /* Increased space before headings */
+    margin-bottom: 50px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center; /* Centers the heading */
+  }
+
+  .headingtop {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .paragraph {
+    margin-bottom: 20px;
+    font-size: 16px;
+    text-align: justify;
+  }
+  
+  .imageContainer {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .image {
+    width: 300px; /* Adjust the size here */
+    border-radius: 10px;
+  }
+  
+  .caption {
+    margin-top: 10px;
+    font-size: 14px;
+    font-style: italic;
+    color: #555;
+  }
+  
